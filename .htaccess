@@ -1,0 +1,5 @@
+RewriteEngine on
+
+#This rule prevents web access to the server scripts.
+RewriteRule server.* / [L]
+RewriteRule server.js / [L]
