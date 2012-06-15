@@ -11,7 +11,27 @@
 
 var express = require('express');
 var mongoose = require('mongoose');
+var User = require('../../dbmodels/user.js');
+var user = mongoose.model('User', UserSchema);
 var handler = module.exports = express.createServer();
 
 // connect to Mongo when the app initializes
 mongoose.connect('mongodb://localhost/norum');
+
+
+
+function setUser(params){
+
+    var user = new User({
+        user: ObjectId,
+        name: 'params.name',
+        email: 'params.email',
+        login: 'params.login',
+        password:'params.password'
+    });
+}
+
+function getUser(params){
+  @ToDo
+
+}
