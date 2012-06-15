@@ -1,3 +1,4 @@
 .idea
 .gitignore
 /server/modules/testfile.js
+.node_modules
