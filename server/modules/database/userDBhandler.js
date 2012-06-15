@@ -9,10 +9,11 @@
 
 // The main application script, ties everything together.
 
+console.log('... starting');
 var express = require('express');
 var mongoose = require('mongoose');
-var User = require('../../dbmodels/user.js');
-var user = mongoose.model('User', UserSchema);
+var dbUser = require('../../dbmodels/user.js');
+var user = mongoose.model('User', dbUser);
 var handler = module.exports = express.createServer();
 
 // connect to Mongo when the app initializes
@@ -32,6 +33,8 @@ function setUser(params){
 }
 
 function getUser(params){
-  @ToDo
+  //@ToDo
 
 }
+
+console.log('... running');

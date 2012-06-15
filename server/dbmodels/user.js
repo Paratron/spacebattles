@@ -16,7 +16,7 @@ var userSchema = new Schema({
     user: ObjectId,
     name: {type: String},
     email: {type: String},
-    login: {type: Sting},
+    login: {type: String},
     password: {type: String}
 });
 
